@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Logitech</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos CSS para el formulario */
+        .contact-form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <dir class="logo">
+            <img src="logo-removebg-preview.png" alt="">
+            <a href="index.html"><h1 >SPR PERU</h1></a> 
+        </dir>
+
+        <div >
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="productos.html">Productos</a>
+            <a href="contactanos.html">Contactenos</a>  
+        </div>
+
+    </header>
+    <div class="contact-form">
+        <h2 class="colorOrange">Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <label>Intereses:</label>
+            <input type="checkbox" id="interes1" name="intereses[]" value="Interés 1">
+            <label for="interes1">Interés 1</label>
+            <input type="checkbox" id="interes2" name="intereses[]" value="Interés 2">
+            <label for="interes2">Interés 2</label>
+            <input type="checkbox" id="interes3" name="intereses[]" value="Interés 3">
+            <label for="interes3">Interés 3</label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>EMPRESA</p>
+        <p>Somos una empresa dedicada al servicio de los Centros de Salud y Personal Asistencial en el ámbito de la Seguridad y Protección Radiológica de los equipos emisores de Radiaciones</p>
+        
+        <h2>SERVICIOS</h2>
+        <ul>
+            <li>Dosimetría personal</li>
+            <li>Control de calidad</li>
+            <li>Cursos</li>
+            <li>Trámites</li>
+            <li>Monitoreo de dosis</li>
+            <li>Radioterapia</li>
+        </ul>
+        
+        <h2>ENLACES RÁPIDOS</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

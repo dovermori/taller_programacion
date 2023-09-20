@@ -1,0 +1,168 @@
+header{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 999; 
+    background-color: rgba(3, 3, 3, 0.548);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%; 
+}
+.portada {
+    width: 100%;
+    height: auto; 
+    margin-top: -70px; 
+}
+
+.alsa{
+    background-color: orangered;
+    color: aliceblue;
+    padding: 10px;
+    
+}
+
+.tituloOrange{
+    color: orangered;
+}
+.nosotros{
+    padding: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.imagen-izquierda,
+.texto-izquierda {
+    flex: 1; 
+}
+
+.imagen-derecha,
+.texto-derecha {
+    flex: 1; 
+}
+
+.imagen-izquierda img,
+.imagen-derecha img {
+    margin-left: 20%;
+    max-width: 100%; 
+    height: 500px; 
+}
+
+.texto-izquierda,
+.texto-derecha {
+    padding: 20px; 
+}
+
+
+
+body{
+    background-color: rgb(230, 225, 220);
+}
+
+.logo{
+    display: flex   ;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+
+    margin-right: 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    font-family: 'Lilita One', sans-serif;
+}
+
+
+
+body{
+    background-color: rgb(230, 225, 220);
+    margin: 0;
+    padding-top: 70px; 
+}
+
+.parrafo{
+    text-align: justify;
+    
+    
+}
+
+.tabla2{
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    
+
+}
+p{
+    text-align: justify;
+    font-family: 'Abel', sans-serif;
+
+
+}
+
+.section {
+    
+  
+    text-align: center;
+    padding-top: 100px;
+  }
+h1{
+    
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+h2{
+
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('lilita.ttf') format('truetype');
+    
+}
+
+
+@font-face {
+    font-family: 'Abel';
+    src: url('abel.ttf') format('truetype');
+    
+}
+
+.izquierda{
+    width: 40%;
+
+
+
+}
+
+.derecha{
+    
+    padding: 100px;
+
+    
+
+}
